@@ -1,0 +1,9 @@
+body {
+  height: 100vh;
+  width: 100vh;
+  display: flex;
+	flex-direction: column;
+  justify-content: space-between;
+  background: var(--main-navy-blue-110-a-1-d, #110A1D);
+  font-family: Lexend;
+}

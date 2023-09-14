@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
+body {
+  height: 100vh;
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--main-navy-blue-110-a-1-d, #110A1D);
+  font-family: Lexend;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,103 @@
+.mask {
+  width: 120rem;
+    height: 65.5rem;
+    flex-shrink: 0;
+    background: linear-gradient(180deg, #fff0 63.64%, rgb(17 9 29) 95.45%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+}
+.banner {
+	width: 120rem;
+	height: 60rem;
+	flex-shrink: 0;
+ 	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	.dotLight-left {
+		width: 14.15363rem;
+		height: 81.40431rem;
+		transform: rotate(-54.311deg);
+		flex-shrink: 0;
+		background: linear-gradient(
+			180deg,
+			#478bf9 0%,
+			rgba(71, 139, 249, 0.4) 100%
+		);
+		opacity: 0.55;
+		filter: blur(150px);
+		position: fixed;
+		z-index: 20;
+		top: 0;
+		left: 7rem;
+	}
+	.dotLight-right {
+		width: 35.875rem;
+		height: 35.875rem;
+		flex-shrink: 0;
+		border-radius: 35.875rem;
+		opacity: 0.7;
+		background: var(
+			--main-blue-hover,
+			linear-gradient(256deg, #478bf9 0%, #9dadf2 100%)
+		);
+		filter: blur(325px);
+		position: fixed;
+		z-index: 20;
+		bottom: 0;
+		right: -9.94rem;
+	}
+	.title {
+		display: flex;
+		width: 41.8125rem;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 3rem;
+		margin-left: 8.75rem;
+		h1 {
+			align-self: stretch;
+			color: var(--main-clean-white-ffffff, #fff);
+			font-size: 6rem;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 6rem;
+			&.gambling {
+				color: var(--main-blue-478-bf-9, #478bf9);
+			}
+		}
+		h4 {
+			align-self: stretch;
+			color: var(--transp-white-white-60, rgba(255, 255, 255, 0.6));
+			font-size: 2rem;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 2rem;
+		}
+		.title-btn {
+			display: flex;
+			padding: 1.25rem 4.5rem;
+			justify-content: center;
+			align-items: center;
+			gap: 0.5rem;
+			border-radius: 3rem;
+			background: var(--main-blue-478-bf-9, #478bf9);
+			p {
+				color: var(--main-clean-white-ffffff, #fff);
+				text-align: center;
+				font-size: 1.5rem;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 2rem;
+				text-transform: uppercase;
+			}
+		}
+	}
+	.bannerBG {
+		width: 20.86238rem;
+		height: 83.38875rem;
+		flex-shrink: 0;
+		display: flex;
+		align-items: center;
+	}
+}

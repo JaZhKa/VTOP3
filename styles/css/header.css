@@ -1,0 +1,74 @@
+header {
+  display: flex;
+  width: 102.5rem;
+  padding: 1.5rem 3rem;
+  margin: 1rem 0 0 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4rem;
+  border: 4px solid var(--main-blue-478-bf-9, #478bf9);
+  background: var(--main-navy-blue-110-a-1-d, #110a1d);
+}
+header .logo {
+  width: 17.9375rem;
+  height: 2rem;
+  flex-shrink: 0;
+}
+header .menu {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+header .menu button {
+  color: var(--main-clean-white-ffffff, #fff);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+header .btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.875rem;
+}
+header .btns .header-btn {
+  display: flex;
+  padding: 0.875rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 1.5rem;
+  border: 2px solid var(--additional-purple-9-dadf-2, #9dadf2);
+  background: var(--main-navy-blue-110-a-1-d, #110a1d);
+  color: var(--main-clean-white-ffffff, #fff);
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  height: 3rem;
+}
+header .btns .lang p {
+  display: flex;
+  align-items: center;
+}
+header .btns .lang p::before {
+  padding: 0 0.5rem 0 0;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  background-size: contain;
+  background: no-repeat;
+  background-image: url("/image/btns/header/Icon - Planet.svg");
+}
+header .btns .signUp {
+  background: var(--main-blue-478-bf-9, #478bf9);
+  border: none;
+}/*# sourceMappingURL=header.css.map */

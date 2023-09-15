@@ -1,9 +1,10 @@
 body {
-  height: 100vh;
-  width: 100vh;
+  width: 120rem;
+  height: 79.0625rem;
   display: flex;
   flex-direction: column;
+  align-content: space-around;
   justify-content: space-between;
-  background: var(--main-navy-blue-110-a-1-d, #110A1D);
-  font-family: Lexend;
+  align-items: center;
+  background: var(--main-navy-blue-110-a-1-d, #110a1d);
 }/*# sourceMappingURL=main.css.map */

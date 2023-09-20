@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: space-around;
   position: absolute;
+  z-index: 30;
 }
 
 .banner {
@@ -16,6 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  z-index: 10;
 }
 .banner .dotLight-left {
   width: 14.15363rem;
@@ -50,6 +52,7 @@
   align-items: flex-start;
   gap: 3rem;
   margin-left: 8.75rem;
+  z-index: 40;
 }
 .banner .title h1 {
   align-self: stretch;
@@ -94,4 +97,76 @@
   flex-shrink: 0;
   display: flex;
   align-items: center;
+  z-index: 20;
+}
+.banner .blog {
+  display: flex;
+  width: 33.1875rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  z-index: 40;
+}
+.banner .blog h3 {
+  color: var(--main-clean-white-ffffff, #fff);
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+.banner .blog .blog-area {
+  height: 37.1875rem;
+  align-self: stretch;
+  border-radius: 6.25rem;
+  border: 3px solid var(--main-blue-478-bf-9, #478bf9);
+  background: var(--transp-white-white-12, rgba(255, 255, 255, 0.12));
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.banner .blog .blog-area .blog {
+  display: flex;
+  width: 29.1875rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 1.5rem 2.5rem 1.5rem 1.5rem;
+}
+.banner .blog .blog-area .blog .card {
+  display: flex;
+  padding: 1rem 4rem;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 12.25rem;
+  background: var(--main-deep-blue-1-e-1231, #1e1231);
+}
+.banner .blog .blog-area .blog .card:hover {
+  border-radius: 12.25rem;
+  background: var(--main-blue-478-bf-9, #478bf9);
+  transition: 0.3s;
+}
+.banner .blog .blog-area .blog .card .text-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.875rem;
+  align-self: stretch;
+}
+.banner .blog .blog-area .blog .card .text-area .blog-text {
+  align-self: stretch;
+  color: var(--main-clean-white-ffffff, #fff);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+.banner .blog .blog-area .blog .card .text-area .date {
+  color: var(--transp-white-white-60, rgba(255, 255, 255, 0.6));
+  font-feature-settings: "liga" off;
+  font-family: Futura PT;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 1rem;
 }/*# sourceMappingURL=banner.css.map */

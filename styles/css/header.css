@@ -8,6 +8,7 @@ header {
   border-radius: 4rem;
   border: 4px solid var(--main-blue-478-bf-9, #478bf9);
   background: var(--main-navy-blue-110-a-1-d, #110a1d);
+  z-index: 50;
 }
 header .logo {
   width: 17.9375rem;

@@ -1,103 +1,86 @@
 @import 'variables';
 
-.mask {
-	width: 100vw;
-	height: 80rem;
-	flex-shrink: 0;
-	background: linear-gradient(
-		180deg,
-		rgb(17 9 29 / 40%) 63.64%,
-		rgb(17, 9, 29) 95.45%
-	);
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	position: absolute;
-	z-index: 30;
-}
+@import 'mixins';
+
 .banner {
-	width: 116rem;
-	height: 77rem;
-	flex-shrink: 0;
+	@include mix-size(97vw, 114vh);
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
 	z-index: 10;
+	overflow-y: hidden;
+	.mask {
+		@include mix-size(100%, 120%);
+		background: linear-gradient(
+			180deg,
+			rgb(17 9 29 / 40%) 63.64%,
+			rgb(17, 9, 29) 95.45%
+		);
+		position: absolute;
+		z-index: 30;
+	}
 	.title {
+		width: 36rem;
 		display: flex;
-		width: 41.8125rem;
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 3rem;
 		z-index: 40;
 		h1 {
+			@include text-style($main-clean-white, 6rem, 500, 6rem);
 			align-self: stretch;
-			color: $main-clean-white;
-			font-size: 6rem;
-			font-style: normal;
-			font-weight: 500;
-			line-height: 6rem;
-			&.gambling {
+			span.gambling {
 				color: $main-blue;
 			}
 		}
 		h4 {
+			@include text-style($transp-white-60, 2rem, 500, 2rem);
 			align-self: stretch;
-			color: $transp-white-60;
-			font-size: 2rem;
-			font-style: normal;
-			font-weight: 500;
-			line-height: 2rem;
 		}
 		.title-btn {
-			display: flex;
 			padding: 1.25rem 4.5rem;
-			justify-content: center;
-			align-items: center;
-			gap: 0.5rem;
 			border-radius: 3rem;
 			background: $main-blue;
 			p {
-				color: $main-clean-white;
+				@include text-style($main-clean-white, 1.5rem, 600, 2rem);
 				text-align: center;
-				font-size: 1.5rem;
-				font-style: normal;
-				font-weight: 600;
-				line-height: 2rem;
 				text-transform: uppercase;
 			}
 		}
 	}
 	.bannerBG {
 		width: 25rem;
-		height: 83.38875rem;
-		flex-shrink: 0;
 		display: flex;
 		align-items: center;
 		gap: 0.1rem;
 		z-index: 20;
 		.line {
+			width: 8.3rem;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			gap: 1rem;
 			img {
+				@include mix-size(6.2rem, 6.2rem);
 				padding: 0.5rem;
+				&.long {
+					@include mix-size(6.2rem, 13.7rem);
+				}
 			}
 		}
 	}
 	.blog {
 		display: flex;
-		width: 33.1875rem;
+		width: 33rem;
 		flex-direction: column;
 		align-items: center;
 		gap: 1.5rem;
 		z-index: 40;
 		h3 {
-			color: $main-clean-white;
-			font-size: 2.5rem;
-			font-style: normal;
-			font-weight: 600;
-			line-height: 2.5rem;
+			@include text-style($main-clean-white, 2.5rem, 600, 2.5rem);
 		}
 		.blog-area {
-			height: 37.1875rem;
+			height: 37rem;
 			align-self: stretch;
 			border-radius: 6.25rem;
 			border: 3px solid $main-blue;
@@ -117,48 +100,31 @@
 				background: $main-blue;
 			}
 			.blog {
-				display: flex;
-				width: 29.1875rem;
-				flex-direction: column;
-				align-items: flex-start;
+				width: 90%;
 				gap: 1rem;
 				margin: 1.5rem;
 				.card {
-					display: flex;
 					padding: 1rem 4rem;
-					flex-direction: column;
-					align-items: flex-start;
-					align-self: stretch;
 					border-radius: 12.25rem;
 					background: $main-deep-blue;
+					list-style: none;
+					cursor: pointer;
 					&:hover {
-						border-radius: 12.25rem;
 						background: $main-blue;
 						transition: 0.3s;
-						cursor: pointer;
 					}
 					.text-area {
 						display: flex;
 						flex-direction: column;
-						align-items: flex-start;
 						gap: 0.875rem;
-						align-self: stretch;
 						.blog-text {
+							@include text-style($main-clean-white, 1.5rem, 400, 1.75rem);
 							align-self: stretch;
-							color: $main-clean-white;
-							font-size: 1.5rem;
-							font-style: normal;
-							font-weight: 400;
-							line-height: 1.75rem;
 						}
 						.date {
-							color: $transp-white-60;
+							@include text-style($transp-white-60, 0.875rem, 450, 1rem);
 							font-feature-settings: 'liga' off;
 							font-family: Futura PT;
-							font-size: 0.875rem;
-							font-style: normal;
-							font-weight: 450;
-							line-height: 1rem;
 						}
 					}
 				}

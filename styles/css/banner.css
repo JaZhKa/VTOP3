@@ -1,84 +1,86 @@
-.mask {
-  width: 100vw;
-  height: 80rem;
-  flex-shrink: 0;
-  background: linear-gradient(180deg, rgba(17, 9, 29, 0.4) 63.64%, rgb(17, 9, 29) 95.45%);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  position: absolute;
-  z-index: 30;
-}
-
 .banner {
-  width: 116rem;
-  height: 77rem;
-  flex-shrink: 0;
+  width: 97vw;
+  height: 114vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   z-index: 10;
+  overflow-y: hidden;
+}
+.banner .mask {
+  width: 100%;
+  height: 120%;
+  background: linear-gradient(180deg, rgba(17, 9, 29, 0.4) 63.64%, rgb(17, 9, 29) 95.45%);
+  position: absolute;
+  z-index: 30;
 }
 .banner .title {
+  width: 36rem;
   display: flex;
-  width: 41.8125rem;
   flex-direction: column;
   align-items: flex-start;
   gap: 3rem;
   z-index: 40;
 }
 .banner .title h1 {
-  align-self: stretch;
   color: #fff;
   font-size: 6rem;
   font-style: normal;
   font-weight: 500;
   line-height: 6rem;
+  align-self: stretch;
 }
-.banner .title h1.gambling {
+.banner .title h1 span.gambling {
   color: #478bf9;
 }
 .banner .title h4 {
-  align-self: stretch;
   color: rgba(255, 255, 255, 0.6);
   font-size: 2rem;
   font-style: normal;
   font-weight: 500;
   line-height: 2rem;
+  align-self: stretch;
 }
 .banner .title .title-btn {
-  display: flex;
   padding: 1.25rem 4.5rem;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
   border-radius: 3rem;
   background: #478bf9;
 }
 .banner .title .title-btn p {
   color: #fff;
-  text-align: center;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 600;
   line-height: 2rem;
+  text-align: center;
   text-transform: uppercase;
 }
 .banner .bannerBG {
   width: 25rem;
-  height: 83.38875rem;
-  flex-shrink: 0;
   display: flex;
   align-items: center;
   gap: 0.1rem;
   z-index: 20;
 }
+.banner .bannerBG .line {
+  width: 8.3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
 .banner .bannerBG .line img {
+  width: 6.2rem;
+  height: 6.2rem;
   padding: 0.5rem;
+}
+.banner .bannerBG .line img.long {
+  width: 6.2rem;
+  height: 13.7rem;
 }
 .banner .blog {
   display: flex;
-  width: 33.1875rem;
+  width: 33rem;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
@@ -92,7 +94,7 @@
   line-height: 2.5rem;
 }
 .banner .blog .blog-area {
-  height: 37.1875rem;
+  height: 37rem;
   align-self: stretch;
   border-radius: 6.25rem;
   border: 3px solid #478bf9;
@@ -113,49 +115,40 @@
   background: #478bf9;
 }
 .banner .blog .blog-area .blog {
-  display: flex;
-  width: 29.1875rem;
-  flex-direction: column;
-  align-items: flex-start;
+  width: 90%;
   gap: 1rem;
   margin: 1.5rem;
 }
 .banner .blog .blog-area .blog .card {
-  display: flex;
   padding: 1rem 4rem;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
   border-radius: 12.25rem;
   background: #1e1231;
+  list-style: none;
+  cursor: pointer;
 }
 .banner .blog .blog-area .blog .card:hover {
-  border-radius: 12.25rem;
   background: #478bf9;
   transition: 0.3s;
-  cursor: pointer;
 }
 .banner .blog .blog-area .blog .card .text-area {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 0.875rem;
-  align-self: stretch;
 }
 .banner .blog .blog-area .blog .card .text-area .blog-text {
-  align-self: stretch;
   color: #fff;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: 1.75rem;
+  align-self: stretch;
 }
 .banner .blog .blog-area .blog .card .text-area .date {
   color: rgba(255, 255, 255, 0.6);
-  font-feature-settings: "liga" off;
-  font-family: Futura PT;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 450;
   line-height: 1rem;
+  font-feature-settings: "liga" off;
+  font-family: Futura PT;
 }/*# sourceMappingURL=banner.css.map */

@@ -19,19 +19,14 @@ footer {
 		justify-content: space-between;
 		align-items: flex-end;
 		align-self: stretch;
+		flex-wrap: wrap;
 		.pages {
 			nav {
 				display: flex;
-				justify-content: center;
-				align-items: center;
 				gap: 2.5rem;
 				a {
-					color: $main-clean-white;
+					@include text-style($main-clean-white, 1rem, 400, 1.25rem);
 					text-align: center;
-					font-size: 1rem;
-					font-style: normal;
-					font-weight: 400;
-					line-height: 1.25rem;
 					text-decoration-line: none;
 					&:hover {
 						color: $main-blue;
@@ -43,32 +38,26 @@ footer {
 		.social {
 			display: flex;
 			flex-direction: column;
-			align-items: flex-end;
 			gap: 0.875rem;
 			z-index: 70;
 			p {
+				@include text-style($main-clean-white, 1rem, 400, 1.25rem);
 				align-self: stretch;
-				color: $main-clean-white;
 				text-align: right;
-				font-size: 1rem;
-				font-style: normal;
-				font-weight: 400;
-				line-height: 1.25rem;
 			}
 			.social-links {
 				display: flex;
 				align-items: center;
 				gap: 0.5rem;
 				button {
-					width: 2rem;
-					height: 2rem;
+					@include mix-size(2rem, 2rem);
 					background: url('./../../image/btns/BG/BG.svg');
 					display: flex;
 					align-items: center;
 					justify-content: center;
-          &:hover{
-            background: url('./../../image/btns/BG/BGHover.svg');
-          }
+					&:hover {
+						background: url('./../../image/btns/BG/BGHover.svg');
+					}
 				}
 			}
 		}

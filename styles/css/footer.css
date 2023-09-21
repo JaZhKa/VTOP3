@@ -7,10 +7,10 @@ footer {
   align-items: flex-start;
   gap: 2rem;
   border-radius: 4rem 4rem 0rem 0rem;
-  border-top: 4px solid var(--main-blue-478-bf-9, #478bf9);
-  border-right: 4px solid var(--main-blue-478-bf-9, #478bf9);
-  border-left: 4px solid var(--main-blue-478-bf-9, #478bf9);
-  background: var(--main-deep-blue-1-e-1231, #1e1231);
+  border-top: 4px solid #478bf9;
+  border-right: 4px solid #478bf9;
+  border-left: 4px solid #478bf9;
+  background: #1e1231;
   z-index: 50;
 }
 footer .footer-wrapper {
@@ -26,7 +26,7 @@ footer .footer-wrapper .pages nav {
   gap: 2.5rem;
 }
 footer .footer-wrapper .pages nav a {
-  color: var(--main-clean-white-ffffff, #fff);
+  color: #fff;
   text-align: center;
   font-size: 1rem;
   font-style: normal;
@@ -35,7 +35,7 @@ footer .footer-wrapper .pages nav a {
   text-decoration-line: none;
 }
 footer .footer-wrapper .pages nav a:hover {
-  color: var(--main-blue-478-bf-9, #478bf9);
+  color: #478bf9;
   text-decoration-line: underline;
 }
 footer .footer-wrapper .social {
@@ -47,7 +47,7 @@ footer .footer-wrapper .social {
 }
 footer .footer-wrapper .social p {
   align-self: stretch;
-  color: var(--main-clean-white-ffffff, #fff);
+  color: #fff;
   text-align: right;
   font-size: 1rem;
   font-style: normal;

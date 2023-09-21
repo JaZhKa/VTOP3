@@ -1,17 +1,20 @@
+@import 'variables';
+
+@import 'mixins';
+
 header {
 	display: flex;
-	width: 102.5rem;
+	@include mix-size(85%);
 	padding: 1.5rem 3rem;
 	margin: 1rem 0 0 0;
 	justify-content: space-between;
 	align-items: center;
 	border-radius: 4rem;
-	border: 4px solid var(--main-blue-478-bf-9, #478bf9);
-	background: var(--main-navy-blue-110-a-1-d, #110a1d);
+	border: 4px solid $main-blue;
+	background: $main-navy-blue;
 	z-index: 50;
 	.logo {
-		width: 17.9375rem;
-		height: 2rem;
+		@include mix-size(18rem, 2rem);
 		flex-shrink: 0;
 	}
 	.menu {
@@ -21,7 +24,7 @@ header {
 		align-items: center;
 		gap: 2rem;
 		button {
-			color: var(--main-clean-white-ffffff, #fff);
+			color: $main-clean-white;
 			font-size: 1rem;
 			font-style: normal;
 			font-weight: 400;
@@ -42,9 +45,9 @@ header {
 			align-items: center;
 			gap: 0.5rem;
 			border-radius: 1.5rem;
-			border: 2px solid var(--additional-purple-9-dadf-2, #9dadf2);
-			background: var(--main-navy-blue-110-a-1-d, #110a1d);
-			color: var(--main-clean-white-ffffff, #fff);
+			border: 2px solid $additional-purple;
+			background: $main-navy-blue;
+			color: $main-clean-white;
 			text-align: center;
 			font-size: 1rem;
 			font-style: normal;
@@ -69,7 +72,7 @@ header {
 			}
 		}
 		.signUp {
-			background: var(--main-blue-478-bf-9, #478bf9);
+			background: $main-blue;
 			border: none;
 		}
 	}

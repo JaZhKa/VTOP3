@@ -1,3 +1,5 @@
+@import 'variables';
+
 .dotLight-left {
 	width: 14.15363rem;
 	height: 81.40431rem;
@@ -18,10 +20,7 @@
 	flex-shrink: 0;
 	border-radius: 35.875rem;
 	opacity: 0.7;
-	background: var(
-		--main-blue-hover,
-		linear-gradient(256deg, #478bf9 0%, #9dadf2 100%)
-	);
+	background: $main-blue-hover;
 	filter: blur(325px);
 	position: fixed;
 	z-index: 60;

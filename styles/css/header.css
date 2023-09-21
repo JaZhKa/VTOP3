@@ -6,8 +6,8 @@ header {
   justify-content: space-between;
   align-items: center;
   border-radius: 4rem;
-  border: 4px solid var(--main-blue-478-bf-9, #478bf9);
-  background: var(--main-navy-blue-110-a-1-d, #110a1d);
+  border: 4px solid #478bf9;
+  background: #110a1d;
   z-index: 50;
 }
 header .logo {
@@ -23,7 +23,7 @@ header .menu {
   gap: 2rem;
 }
 header .menu button {
-  color: var(--main-clean-white-ffffff, #fff);
+  color: #fff;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -44,9 +44,9 @@ header .btns .header-btn {
   align-items: center;
   gap: 0.5rem;
   border-radius: 1.5rem;
-  border: 2px solid var(--additional-purple-9-dadf-2, #9dadf2);
-  background: var(--main-navy-blue-110-a-1-d, #110a1d);
-  color: var(--main-clean-white-ffffff, #fff);
+  border: 2px solid #9dadf2;
+  background: #110a1d;
+  color: #fff;
   text-align: center;
   font-size: 1rem;
   font-style: normal;
@@ -69,6 +69,6 @@ header .btns .lang p::before {
   background-image: url("/image/btns/header/Icon - Planet.svg");
 }
 header .btns .signUp {
-  background: var(--main-blue-478-bf-9, #478bf9);
+  background: #478bf9;
   border: none;
 }/*# sourceMappingURL=header.css.map */

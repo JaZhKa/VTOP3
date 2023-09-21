@@ -16,7 +16,7 @@
   flex-shrink: 0;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   z-index: 10;
 }
 .banner .title {
@@ -29,18 +29,18 @@
 }
 .banner .title h1 {
   align-self: stretch;
-  color: var(--main-clean-white-ffffff, #fff);
+  color: #fff;
   font-size: 6rem;
   font-style: normal;
   font-weight: 500;
   line-height: 6rem;
 }
 .banner .title h1.gambling {
-  color: var(--main-blue-478-bf-9, #478bf9);
+  color: #478bf9;
 }
 .banner .title h4 {
   align-self: stretch;
-  color: var(--transp-white-white-60, rgba(255, 255, 255, 0.6));
+  color: rgba(255, 255, 255, 0.6);
   font-size: 2rem;
   font-style: normal;
   font-weight: 500;
@@ -53,10 +53,10 @@
   align-items: center;
   gap: 0.5rem;
   border-radius: 3rem;
-  background: var(--main-blue-478-bf-9, #478bf9);
+  background: #478bf9;
 }
 .banner .title .title-btn p {
-  color: var(--main-clean-white-ffffff, #fff);
+  color: #fff;
   text-align: center;
   font-size: 1.5rem;
   font-style: normal;
@@ -65,7 +65,7 @@
   text-transform: uppercase;
 }
 .banner .bannerBG {
-  width: 20.86238rem;
+  width: 25rem;
   height: 83.38875rem;
   flex-shrink: 0;
   display: flex;
@@ -85,7 +85,7 @@
   z-index: 40;
 }
 .banner .blog h3 {
-  color: var(--main-clean-white-ffffff, #fff);
+  color: #fff;
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 600;
@@ -95,8 +95,8 @@
   height: 37.1875rem;
   align-self: stretch;
   border-radius: 6.25rem;
-  border: 3px solid var(--main-blue-478-bf-9, #478bf9);
-  background: var(--transp-white-white-12, rgba(255, 255, 255, 0.12));
+  border: 3px solid #478bf9;
+  background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(10px);
   overflow: hidden;
   overflow-y: scroll;
@@ -106,11 +106,11 @@
 }
 .banner .blog .blog-area::-webkit-scrollbar-track {
   border-radius: 0.625rem;
-  background: var(--transp-white-white-12, rgba(255, 255, 255, 0.12));
+  background: rgba(255, 255, 255, 0.12);
 }
 .banner .blog .blog-area::-webkit-scrollbar-thumb {
   border-radius: 0.625rem;
-  background: var(--main-blue-478-bf-9, #478bf9);
+  background: #478bf9;
 }
 .banner .blog .blog-area .blog {
   display: flex;
@@ -127,11 +127,11 @@
   align-items: flex-start;
   align-self: stretch;
   border-radius: 12.25rem;
-  background: var(--main-deep-blue-1-e-1231, #1e1231);
+  background: #1e1231;
 }
 .banner .blog .blog-area .blog .card:hover {
   border-radius: 12.25rem;
-  background: var(--main-blue-478-bf-9, #478bf9);
+  background: #478bf9;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -144,14 +144,14 @@
 }
 .banner .blog .blog-area .blog .card .text-area .blog-text {
   align-self: stretch;
-  color: var(--main-clean-white-ffffff, #fff);
+  color: #fff;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: 1.75rem;
 }
 .banner .blog .blog-area .blog .card .text-area .date {
-  color: var(--transp-white-white-60, rgba(255, 255, 255, 0.6));
+  color: rgba(255, 255, 255, 0.6);
   font-feature-settings: "liga" off;
   font-family: Futura PT;
   font-size: 0.875rem;

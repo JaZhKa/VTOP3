@@ -1,0 +1,27 @@
+.dotLight-left {
+  width: 14.15363rem;
+  height: 81.40431rem;
+  transform: rotate(-54.311deg);
+  flex-shrink: 0;
+  background: linear-gradient(180deg, #478bf9 0%, rgba(71, 139, 249, 0.4) 100%);
+  opacity: 0.55;
+  filter: blur(150px);
+  position: absolute;
+  z-index: 30;
+  top: 0;
+  left: 7rem;
+}
+
+.dotLight-right {
+  width: 35.875rem;
+  height: 35.875rem;
+  flex-shrink: 0;
+  border-radius: 35.875rem;
+  opacity: 0.7;
+  background: var(--main-blue-hover, linear-gradient(256deg, #478bf9 0%, #9dadf2 100%));
+  filter: blur(325px);
+  position: fixed;
+  z-index: 60;
+  bottom: -39.4rem;
+  right: -10rem;
+}/*# sourceMappingURL=dotLights.css.map */

@@ -1,14 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
 @import url("https://fonts.cdnfonts.com/css/futura-pt");
 body {
-  width: 120rem;
-  height: 79.0625rem;
   display: flex;
   flex-direction: column;
   align-content: space-around;
   justify-content: space-between;
   align-items: center;
   background: var(--main-navy-blue-110-a-1-d, #110a1d);
+  overflow-x: hidden;
+}
+body button {
+  cursor: pointer;
 }
 
 header {
@@ -41,7 +43,6 @@ header .menu button {
   font-style: normal;
   font-weight: 400;
   line-height: 1.25rem;
-  cursor: pointer;
   border: none;
   background: none;
 }
@@ -88,10 +89,10 @@ header .btns .signUp {
 }
 
 .mask {
-  width: 120rem;
-  height: 65.5rem;
+  width: 100vw;
+  height: 80rem;
   flex-shrink: 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 63.64%, rgb(17, 9, 29) 95.45%);
+  background: linear-gradient(180deg, rgba(17, 9, 29, 0.4) 63.64%, rgb(17, 9, 29) 95.45%);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -100,39 +101,13 @@ header .btns .signUp {
 }
 
 .banner {
-  width: 120rem;
-  height: 60rem;
+  width: 116rem;
+  height: 77rem;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
   z-index: 10;
-}
-.banner .dotLight-left {
-  width: 14.15363rem;
-  height: 81.40431rem;
-  transform: rotate(-54.311deg);
-  flex-shrink: 0;
-  background: linear-gradient(180deg, #478bf9 0%, rgba(71, 139, 249, 0.4) 100%);
-  opacity: 0.55;
-  filter: blur(150px);
-  position: fixed;
-  z-index: 20;
-  top: 0;
-  left: 7rem;
-}
-.banner .dotLight-right {
-  width: 35.875rem;
-  height: 35.875rem;
-  flex-shrink: 0;
-  border-radius: 35.875rem;
-  opacity: 0.7;
-  background: var(--main-blue-hover, linear-gradient(256deg, #478bf9 0%, #9dadf2 100%));
-  filter: blur(325px);
-  position: fixed;
-  z-index: 20;
-  bottom: 0;
-  right: -9.94rem;
 }
 .banner .title {
   display: flex;
@@ -140,7 +115,6 @@ header .btns .signUp {
   flex-direction: column;
   align-items: flex-start;
   gap: 3rem;
-  margin-left: 8.75rem;
   z-index: 40;
 }
 .banner .title h1 {
@@ -186,7 +160,11 @@ header .btns .signUp {
   flex-shrink: 0;
   display: flex;
   align-items: center;
+  gap: 0.1rem;
   z-index: 20;
+}
+.banner .bannerBG .line img {
+  padding: 0.5rem;
 }
 .banner .blog {
   display: flex;
@@ -213,13 +191,24 @@ header .btns .signUp {
   overflow: hidden;
   overflow-y: scroll;
 }
+.banner .blog .blog-area::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.banner .blog .blog-area::-webkit-scrollbar-track {
+  border-radius: 0.625rem;
+  background: var(--transp-white-white-12, rgba(255, 255, 255, 0.12));
+}
+.banner .blog .blog-area::-webkit-scrollbar-thumb {
+  border-radius: 0.625rem;
+  background: var(--main-blue-478-bf-9, #478bf9);
+}
 .banner .blog .blog-area .blog {
   display: flex;
   width: 29.1875rem;
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
-  margin: 1.5rem 2.5rem 1.5rem 1.5rem;
+  margin: 1.5rem;
 }
 .banner .blog .blog-area .blog .card {
   display: flex;
@@ -234,6 +223,7 @@ header .btns .signUp {
   border-radius: 12.25rem;
   background: var(--main-blue-478-bf-9, #478bf9);
   transition: 0.3s;
+  cursor: pointer;
 }
 .banner .blog .blog-area .blog .card .text-area {
   display: flex;
@@ -258,6 +248,107 @@ header .btns .signUp {
   font-style: normal;
   font-weight: 450;
   line-height: 1rem;
+}
+
+footer {
+  display: flex;
+  width: 84vw;
+  padding: 2.5rem 8.75rem 1.5rem 8.75rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 2rem;
+  border-radius: 4rem 4rem 0rem 0rem;
+  border-top: 4px solid var(--main-blue-478-bf-9, #478bf9);
+  border-right: 4px solid var(--main-blue-478-bf-9, #478bf9);
+  border-left: 4px solid var(--main-blue-478-bf-9, #478bf9);
+  background: var(--main-deep-blue-1-e-1231, #1e1231);
+  z-index: 50;
+}
+footer .footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-self: stretch;
+}
+footer .footer-wrapper .pages nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+footer .footer-wrapper .pages nav a {
+  color: var(--main-clean-white-ffffff, #fff);
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  text-decoration-line: none;
+}
+footer .footer-wrapper .pages nav a:hover {
+  color: var(--main-blue-478-bf-9, #478bf9);
+  text-decoration-line: underline;
+}
+footer .footer-wrapper .social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.875rem;
+  z-index: 70;
+}
+footer .footer-wrapper .social p {
+  align-self: stretch;
+  color: var(--main-clean-white-ffffff, #fff);
+  text-align: right;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+footer .footer-wrapper .social .social-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+footer .footer-wrapper .social .social-links button {
+  width: 2rem;
+  height: 2rem;
+  background: url("./../../image/btns/BG/BG.svg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer-wrapper .social .social-links button:hover {
+  background: url("./../../image/btns/BG/BGHover.svg");
+}
+
+.dotLight-left {
+  width: 14.15363rem;
+  height: 81.40431rem;
+  transform: rotate(-54.311deg);
+  flex-shrink: 0;
+  background: linear-gradient(180deg, #478bf9 0%, rgba(71, 139, 249, 0.4) 100%);
+  opacity: 0.55;
+  filter: blur(150px);
+  position: absolute;
+  z-index: 30;
+  top: 0;
+  left: 7rem;
+}
+
+.dotLight-right {
+  width: 35.875rem;
+  height: 35.875rem;
+  flex-shrink: 0;
+  border-radius: 35.875rem;
+  opacity: 0.7;
+  background: var(--main-blue-hover, linear-gradient(256deg, #478bf9 0%, #9dadf2 100%));
+  filter: blur(325px);
+  position: fixed;
+  z-index: 60;
+  bottom: -39.4rem;
+  right: -10rem;
 }
 
 * {

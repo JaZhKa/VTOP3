@@ -1,8 +1,8 @@
 .mask {
-  width: 120rem;
-  height: 65.5rem;
+  width: 100vw;
+  height: 80rem;
   flex-shrink: 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 63.64%, rgb(17, 9, 29) 95.45%);
+  background: linear-gradient(180deg, rgba(17, 9, 29, 0.4) 63.64%, rgb(17, 9, 29) 95.45%);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -11,39 +11,13 @@
 }
 
 .banner {
-  width: 120rem;
-  height: 60rem;
+  width: 116rem;
+  height: 77rem;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
   z-index: 10;
-}
-.banner .dotLight-left {
-  width: 14.15363rem;
-  height: 81.40431rem;
-  transform: rotate(-54.311deg);
-  flex-shrink: 0;
-  background: linear-gradient(180deg, #478bf9 0%, rgba(71, 139, 249, 0.4) 100%);
-  opacity: 0.55;
-  filter: blur(150px);
-  position: fixed;
-  z-index: 20;
-  top: 0;
-  left: 7rem;
-}
-.banner .dotLight-right {
-  width: 35.875rem;
-  height: 35.875rem;
-  flex-shrink: 0;
-  border-radius: 35.875rem;
-  opacity: 0.7;
-  background: var(--main-blue-hover, linear-gradient(256deg, #478bf9 0%, #9dadf2 100%));
-  filter: blur(325px);
-  position: fixed;
-  z-index: 20;
-  bottom: 0;
-  right: -9.94rem;
 }
 .banner .title {
   display: flex;
@@ -51,7 +25,6 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 3rem;
-  margin-left: 8.75rem;
   z-index: 40;
 }
 .banner .title h1 {
@@ -97,7 +70,11 @@
   flex-shrink: 0;
   display: flex;
   align-items: center;
+  gap: 0.1rem;
   z-index: 20;
+}
+.banner .bannerBG .line img {
+  padding: 0.5rem;
 }
 .banner .blog {
   display: flex;
@@ -124,13 +101,24 @@
   overflow: hidden;
   overflow-y: scroll;
 }
+.banner .blog .blog-area::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.banner .blog .blog-area::-webkit-scrollbar-track {
+  border-radius: 0.625rem;
+  background: var(--transp-white-white-12, rgba(255, 255, 255, 0.12));
+}
+.banner .blog .blog-area::-webkit-scrollbar-thumb {
+  border-radius: 0.625rem;
+  background: var(--main-blue-478-bf-9, #478bf9);
+}
 .banner .blog .blog-area .blog {
   display: flex;
   width: 29.1875rem;
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
-  margin: 1.5rem 2.5rem 1.5rem 1.5rem;
+  margin: 1.5rem;
 }
 .banner .blog .blog-area .blog .card {
   display: flex;
@@ -145,6 +133,7 @@
   border-radius: 12.25rem;
   background: var(--main-blue-478-bf-9, #478bf9);
   transition: 0.3s;
+  cursor: pointer;
 }
 .banner .blog .blog-area .blog .card .text-area {
   display: flex;

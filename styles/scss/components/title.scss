@@ -1,0 +1,55 @@
+@import './../variables';
+
+@import './../mixins';
+
+.banner {
+	.title {
+		width: 36rem;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 3rem;
+		z-index: 40;
+		h1 {
+			@include text-style($main-clean-white, 6rem, 500, 6rem);
+			align-self: stretch;
+			span.gambling {
+				color: $main-blue;
+			}
+		}
+		h4 {
+			@include text-style($transp-white-60, 2rem, 500, 2rem);
+			align-self: stretch;
+		}
+		.title-btn {
+			padding: 1.25rem 4.5rem;
+			border-radius: 3rem;
+			background: $main-blue;
+			p {
+				@include text-style($main-clean-white, 1.5rem, 600, 2rem);
+				text-align: center;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+@include media(max, xl) {
+	.banner {
+		.title {
+			width: 25rem;
+			h1 {
+				@include text-style($main-clean-white, 4rem, 500, 4rem);
+			}
+			h4 {
+				@include text-style($transp-white-60, 1.2rem, 500, 2rem);
+			}
+			.title-btn {
+				padding: 1rem 2rem;
+				p {
+					@include text-style($main-clean-white, 1.2rem, 600, 2rem);
+				}
+			}
+		}
+	}
+}

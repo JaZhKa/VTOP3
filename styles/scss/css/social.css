@@ -1,0 +1,31 @@
+footer .footer-wrapper .social {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  z-index: 70;
+}
+footer .footer-wrapper .social p {
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  align-self: stretch;
+  text-align: right;
+}
+footer .footer-wrapper .social .social-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+footer .footer-wrapper .social .social-links button {
+  width: 2rem;
+  height: 2rem;
+  background: url("./../../image/btns/BG/BG.svg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer-wrapper .social .social-links button:hover {
+  background: url("./../../image/btns/BG/BGHover.svg");
+}/*# sourceMappingURL=social.css.map */

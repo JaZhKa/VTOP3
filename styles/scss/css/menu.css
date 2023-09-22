@@ -1,0 +1,18 @@
+header .menu {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+header .menu a {
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  border: none;
+  background: none;
+  text-decoration-line: none;
+}/*# sourceMappingURL=menu.css.map */

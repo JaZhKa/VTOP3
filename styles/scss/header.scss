@@ -2,6 +2,10 @@
 
 @import 'mixins';
 
+@import './components/menu';
+
+@import './components/headerBtns';
+
 header {
 	display: flex;
 	width: 85vw;
@@ -18,59 +22,6 @@ header {
 		flex: 0 1 auto;
 		img {
 			@include mix-size(100%, 100%);
-		}
-	}
-	.menu {
-		display: flex;
-		padding: 0.5rem;
-		justify-content: center;
-		align-items: center;
-		gap: 2rem;
-		flex-wrap: wrap;
-		a {
-			@include text-style($main-clean-white, 1rem, 400, 1.25rem);
-			border: none;
-			background: none;
-			text-decoration-line: none;
-		}
-	}
-	.btns {
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-		gap: 0.875rem;
-		flex-wrap: wrap;
-		.header-btn {
-			@include text-style($main-clean-white, 1rem, 400, 1.25rem);
-			display: flex;
-			padding: 0.875rem;
-			justify-content: center;
-			align-items: center;
-			gap: 0.5rem;
-			border-radius: 1.5rem;
-			border: 2px solid $additional-purple;
-			background: $main-navy-blue;
-			text-align: center;
-			height: 3rem;
-		}
-		.lang {
-			p {
-				display: flex;
-				align-items: center;
-				&::before {
-					@include mix-size(1rem, 1rem);
-					content: '';
-					padding-right: 0.5rem;
-					display: inline-block;
-					background-size: contain;
-					background: no-repeat;
-					background-image: url('/image/btns/header/Icon - Planet.svg');
-				}
-			}
-		}
-		.signUp {
-			background: $main-blue;
-			border: none;
 		}
 	}
 }

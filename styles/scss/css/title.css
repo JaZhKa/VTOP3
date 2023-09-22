@@ -1,0 +1,71 @@
+.banner .title {
+  width: 36rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+  z-index: 40;
+}
+.banner .title h1 {
+  color: #fff;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 6rem;
+  align-self: stretch;
+}
+.banner .title h1 span.gambling {
+  color: #478bf9;
+}
+.banner .title h4 {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2rem;
+  align-self: stretch;
+}
+.banner .title .title-btn {
+  padding: 1.25rem 4.5rem;
+  border-radius: 3rem;
+  background: #478bf9;
+}
+.banner .title .title-btn p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1300px) {
+  .banner .title {
+    width: 25rem;
+  }
+  .banner .title h1 {
+    color: #fff;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 4rem;
+  }
+  .banner .title h4 {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+  .banner .title .title-btn {
+    padding: 1rem 2rem;
+  }
+  .banner .title .title-btn p {
+    color: #fff;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2rem;
+  }
+}/*# sourceMappingURL=title.css.map */

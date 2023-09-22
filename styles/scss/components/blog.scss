@@ -1,0 +1,90 @@
+@import './../variables';
+
+@import './../mixins';
+
+.banner {
+	.blog {
+		display: flex;
+		width: 33rem;
+		flex-direction: column;
+		align-items: center;
+		gap: 1.5rem;
+		z-index: 40;
+		h3 {
+			@include text-style($main-clean-white, 2.5rem, 600, 2.5rem);
+		}
+		.blog-area {
+			height: 37rem;
+			align-self: stretch;
+			border-radius: 6.25rem;
+			border: 3px solid $main-blue;
+			background: $transp-white-12;
+			backdrop-filter: blur(10px);
+			overflow: hidden;
+			overflow-y: scroll;
+			&::-webkit-scrollbar {
+				width: 0.5rem;
+			}
+			&::-webkit-scrollbar-track {
+				border-radius: 0.625rem;
+				background: $transp-white-12;
+			}
+			&::-webkit-scrollbar-thumb {
+				border-radius: 0.625rem;
+				background: $main-blue;
+			}
+			.blog {
+				width: 90%;
+				gap: 1rem;
+				margin: 1.5rem;
+				.card {
+					padding: 1rem 4rem;
+					border-radius: 12.25rem;
+					background: $main-deep-blue;
+					list-style: none;
+					cursor: pointer;
+					&:hover {
+						background: $main-blue;
+						transition: 0.3s;
+					}
+					.text-area {
+						display: flex;
+						flex-direction: column;
+						gap: 0.875rem;
+						.blog-text {
+							@include text-style($main-clean-white, 1.5rem, 400, 1.75rem);
+							align-self: stretch;
+						}
+						.date {
+							@include text-style($transp-white-60, 0.875rem, 450, 1rem);
+							font-feature-settings: 'liga' off;
+							font-family: Futura PT;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media(max, xl) {
+	.banner {
+		.blog {
+			width: 23rem;
+			h3 {
+				@include text-style($main-clean-white, 2rem, 600, 2.5rem);
+			}
+			.blog-area {
+				.blog{
+					.card{
+						.text-area{
+							.blog-text{
+								@include text-style($main-clean-white, 1.1rem, 400, 1.75rem);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

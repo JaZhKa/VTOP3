@@ -1,0 +1,42 @@
+header .btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.875rem;
+  flex-wrap: wrap;
+}
+header .btns .header-btn {
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  display: flex;
+  padding: 0.875rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 1.5rem;
+  border: 2px solid #9dadf2;
+  background: #110a1d;
+  text-align: center;
+  height: 3rem;
+}
+header .btns .lang p {
+  display: flex;
+  align-items: center;
+}
+header .btns .lang p::before {
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  padding-right: 0.5rem;
+  display: inline-block;
+  background-size: contain;
+  background: no-repeat;
+  background-image: url("/image/btns/header/Icon - Planet.svg");
+}
+header .btns .signUp {
+  background: #478bf9;
+  border: none;
+}/*# sourceMappingURL=headerBtns.css.map */

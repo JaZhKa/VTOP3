@@ -1,0 +1,23 @@
+@import './../variables';
+
+@import './../mixins';
+
+footer {
+	.footer-wrapper {
+		.pages {
+			nav {
+				display: flex;
+				gap: 2.5rem;
+				a {
+					@include text-style($main-clean-white, 1rem, 400, 1.25rem);
+					text-align: center;
+					text-decoration-line: none;
+					&:hover {
+						color: $main-blue;
+						text-decoration-line: underline;
+					}
+				}
+			}
+		}
+	}
+}

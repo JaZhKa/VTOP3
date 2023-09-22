@@ -1,9 +1,14 @@
 @import 'variables';
 
+@import 'mixins';
+
+@import './components/footerPages';
+
+@import './components/social';
+
 footer {
 	display: flex;
-	width: 84vw;
-	padding: 2.5rem 8.75rem 1.5rem 8.75rem;
+	width: 98vw;
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: flex-start;
@@ -20,46 +25,14 @@ footer {
 		align-items: flex-end;
 		align-self: stretch;
 		flex-wrap: wrap;
-		.pages {
-			nav {
-				display: flex;
-				gap: 2.5rem;
-				a {
-					@include text-style($main-clean-white, 1rem, 400, 1.25rem);
-					text-align: center;
-					text-decoration-line: none;
-					&:hover {
-						color: $main-blue;
-						text-decoration-line: underline;
-					}
-				}
-			}
-		}
-		.social {
-			display: flex;
-			flex-direction: column;
-			gap: 0.875rem;
-			z-index: 70;
-			p {
-				@include text-style($main-clean-white, 1rem, 400, 1.25rem);
-				align-self: stretch;
-				text-align: right;
-			}
-			.social-links {
-				display: flex;
-				align-items: center;
-				gap: 0.5rem;
-				button {
-					@include mix-size(2rem, 2rem);
-					background: url('./../../image/btns/BG/BG.svg');
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					&:hover {
-						background: url('./../../image/btns/BG/BGHover.svg');
-					}
-				}
-			}
+		margin: 2.5rem 8.75rem 1.5rem 8.75rem;
+	}
+}
+
+@include media(max, xl) {
+	footer{ 
+		.footer-wrapper{
+			margin: 1rem;
 		}
 	}
 }

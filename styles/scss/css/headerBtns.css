@@ -3,7 +3,6 @@ header .btns {
   justify-content: flex-end;
   align-items: center;
   gap: 0.875rem;
-  flex-wrap: wrap;
 }
 header .btns .header-btn {
   color: #fff;
@@ -39,4 +38,67 @@ header .btns .lang p::before {
 header .btns .signUp {
   background: #478bf9;
   border: none;
+}
+
+@media only screen and (max-width: 768px) {
+  header .btns .header-btn {
+    padding: 0.4rem;
+  }
+  header .btns .header-btn:not(.lang) {
+    display: none;
+  }
+  header .btns .lang p {
+    display: none;
+  }
+  header .btns .lang .lang-icon {
+    width: 2rem;
+    height: 100%;
+    background-size: cover;
+    background-image: url("/image/btns/header/Icon - Planet.svg");
+  }
+  header .btns .burger {
+    display: block;
+    position: relative;
+    width: 3rem;
+    height: 1.8rem;
+    cursor: pointer;
+  }
+  header .btns .burger::before, header .btns .burger::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    left: 0;
+    transition: 0.2s;
+  }
+  header .btns .burger::before {
+    top: 0;
+  }
+  header .btns .burger::after {
+    bottom: 0;
+  }
+  header .btns .burger span {
+    background-color: #fff;
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    left: 0;
+    top: 0.84rem;
+    transition: 0.2s;
+  }
+  header .btns .burger.active::before {
+    transform: rotate(45deg);
+    top: 13px;
+    transition: 0.2s;
+  }
+  header .btns .burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 13px;
+    transition: 0.2s;
+  }
+  header .btns .burger.active span {
+    transform: scale(0);
+    transition: 0.2s;
+  }
 }/*# sourceMappingURL=headerBtns.css.map */

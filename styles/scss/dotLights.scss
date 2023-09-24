@@ -27,3 +27,19 @@
 	bottom: -39.4rem;
 	right: -10rem;
 }
+
+@include media(max, lg) {
+	.dotLight-left {
+    height: 100%;
+    top: -20%;
+    left: 40%;
+	}
+}
+
+@include media(max, lg) {
+	.dotLight-left {
+    height: 40%;
+    top: 10%;
+    left: 50%;
+	}
+}

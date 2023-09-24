@@ -18,3 +18,11 @@ header {
 		}
 	}
 }
+
+@include media(max, md) {
+	header {
+		.menu {
+			display: none;
+		}
+	}
+}

@@ -1,5 +1,7 @@
 @import 'variables';
 
+@import './components/mobileMenu';
+
 body {
 	display: flex;
 	flex-direction: column;

@@ -15,4 +15,10 @@ header .menu a {
   border: none;
   background: none;
   text-decoration-line: none;
+}
+
+@media only screen and (max-width: 768px) {
+  header .menu {
+    display: none;
+  }
 }/*# sourceMappingURL=menu.css.map */

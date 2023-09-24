@@ -25,3 +25,15 @@ header {
 		}
 	}
 }
+
+@include media(max, lg) {
+	header{
+		padding: 0.5rem 3rem;
+	}
+}
+
+@include media(max, md) {
+	header {
+		padding: 0.5rem 1rem;
+	}
+}

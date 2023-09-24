@@ -32,3 +32,15 @@ footer {
 		}
 	}
 }
+
+@include media(max, lg) {
+	footer {
+		.footer-wrapper {
+			.social {
+				p {
+					text-align: center;
+				}
+			}
+		}
+	}
+}

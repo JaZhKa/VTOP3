@@ -1,0 +1,50 @@
+@import './../variables';
+
+@import './../mixins';
+
+@include media(max, md) {
+	.mobile {
+		display: none;
+		&.active {
+			position: absolute;
+			z-index: 60;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			align-items: center;
+			justify-content: space-around;
+			gap: 2rem;
+			position: absolute;
+			background: $main-navy-blue;
+			top: 7rem;
+			.mobile-menu {
+				width: 100%;
+				gap: 1rem;
+				display: flex;
+				flex-direction: column;
+				flex-wrap: nowrap;
+				align-items: center;
+				width: 81%;
+				.mobile-header-btn {
+					@include mobile-btns(2px solid $main-blue, $main-navy-blue);
+				}
+			}
+			.mobile-btns {
+				width: 100%;
+				gap: 1rem;
+				display: flex;
+				flex-direction: column;
+				flex-wrap: nowrap;
+				width: 90%;
+				.mobile-header-btn {
+					@include mobile-btns(2px solid $main-blue, $main-deep-blue);
+					&.signUp {
+						@include mobile-btns(none, $main-blue);
+						margin-bottom: 7rem;
+					}
+				}
+			}
+		}
+	}
+}

@@ -53,3 +53,33 @@
 		}
 	}
 }
+
+@include media(max, lg) {
+	.banner {
+		.title {
+			h1 {
+				@include text-style($main-clean-white, 4rem, 500, 4rem);
+			}
+			width: unset;
+			align-items: center;
+			h4 {
+				align-self: center;
+				@include text-style($transp-white-60, 1.5rem, 500, 2rem);
+			}
+			.title-btn {
+				padding: 1.25rem 4.5rem;
+				@include text-style($main-clean-white, 1.5rem, 600, 2rem);
+			}
+		}
+	}
+}
+
+@include media(min, lg) {
+	.banner {
+		.title {
+			h1 {
+				@include text-style($main-clean-white, 5rem, 500, 4rem);
+			}
+		}
+	}
+}

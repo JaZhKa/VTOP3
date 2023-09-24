@@ -26,3 +26,15 @@
 		z-index: 30;
 	}
 }
+
+@include media(max, lg) {
+	.banner {
+		height: 150vh;
+		overflow-y: unset;
+		flex-direction: column;
+		.mask {
+			@include mix-size(100%, 100%);
+			bottom: 9%;
+		}
+	}
+}

@@ -30,9 +30,19 @@ footer {
 }
 
 @include media(max, xl) {
-	footer{ 
-		.footer-wrapper{
+	footer {
+		.footer-wrapper {
 			margin: 1rem;
+		}
+	}
+}
+
+@include media(max, lg) {
+	footer {
+		.footer-wrapper {
+			flex-direction: column;
+			align-items: center;
+			gap: 1rem;
 		}
 	}
 }

@@ -88,3 +88,33 @@
 		}
 	}
 }
+
+@include media(max, lg) {
+	.banner {
+		.blog {
+			width: 60%;
+			h3 {
+				@include text-style($main-clean-white, 2.5rem, 600, 2.5rem);
+			}
+			.blog-area {
+				.blog{
+					.card{
+						.text-area{
+							.blog-text{
+								@include text-style($main-clean-white, 1.5rem, 400, 1.75rem);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media(max, md) {
+	.banner {
+		.blog{
+			width: 80%;
+		}
+	}
+}

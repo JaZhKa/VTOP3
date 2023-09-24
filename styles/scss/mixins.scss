@@ -13,6 +13,18 @@ font-weight: $fw;
 line-height: $fh;
 }
 
+@mixin mobile-btns($border, $bg) { 
+  gap: 0.5rem;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-radius: 2rem;
+  border: $border;
+  background: $bg;
+  text-decoration-line: none;
+  width: 100%;
+  @include text-style($main-clean-white, 1rem, 400, 1.25rem);
+}
+
 @mixin media($minmax, $media) {
   @each $size, $resolution in $sizes {
     @if $media == $size {

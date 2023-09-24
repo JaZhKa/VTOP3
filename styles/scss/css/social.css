@@ -28,4 +28,10 @@ footer .footer-wrapper .social .social-links button {
 }
 footer .footer-wrapper .social .social-links button:hover {
   background: url("./../../image/btns/BG/BGHover.svg");
+}
+
+@media only screen and (max-width: 960px) {
+  footer .footer-wrapper .social p {
+    text-align: center;
+  }
 }/*# sourceMappingURL=social.css.map */

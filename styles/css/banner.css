@@ -107,6 +107,11 @@
     line-height: 4rem;
   }
 }
+@media only screen and (max-width: 768px) {
+  .banner .title h1, .banner .title h4 {
+    text-align: center;
+  }
+}
 .banner .bannerBG {
   width: 25rem;
   display: flex;
@@ -253,6 +258,11 @@
     line-height: 1.75rem;
   }
 }
+@media only screen and (max-width: 768px) {
+  .banner .blog {
+    width: 80%;
+  }
+}
 .banner {
   width: 97vw;
   height: 114vh;
@@ -272,8 +282,9 @@
 
 @media only screen and (max-width: 960px) {
   .banner {
+    width: 100vw;
     height: 150vh;
-    overflow-y: unset;
+    overflow: hidden;
     flex-direction: column;
   }
   .banner .mask {

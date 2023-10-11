@@ -2,6 +2,10 @@
 
 @import './../mixins';
 
+.mobile {
+	display: none;
+}
+
 @include media(max, md) {
 	.mobile {
 		display: none;

@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
 @import url("https://fonts.cdnfonts.com/css/futura-pt");
+.mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   .mobile {
     display: none;
@@ -152,7 +156,7 @@ header .btns .lang p::before {
   display: inline-block;
   background-size: contain;
   background: no-repeat;
-  background-image: url("/image/btns/header/Icon - Planet.svg");
+  background-image: url("./../../../image/btns/header/Icon - Planet.svg");
 }
 header .btns .signUp {
   background: #478bf9;
@@ -173,7 +177,7 @@ header .btns .signUp {
     width: 2rem;
     height: 100%;
     background-size: cover;
-    background-image: url("/image/btns/header/Icon - Planet.svg");
+    background-image: url("./../../../image/btns/header/Icon - Planet.svg");
   }
   header .btns .burger {
     display: block;
@@ -361,6 +365,11 @@ header .logo img {
     line-height: 4rem;
   }
 }
+@media only screen and (max-width: 768px) {
+  .banner .title h1, .banner .title h4 {
+    text-align: center;
+  }
+}
 .banner .bannerBG {
   width: 25rem;
   display: flex;
@@ -531,8 +540,9 @@ header .logo img {
 
 @media only screen and (max-width: 960px) {
   .banner {
+    width: 100vw;
     height: 150vh;
-    overflow-y: unset;
+    overflow: hidden;
     flex-direction: column;
   }
   .banner .mask {

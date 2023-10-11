@@ -29,8 +29,8 @@
 
 @include media(max, lg) {
 	.banner {
-		height: 150vh;
-		overflow-y: unset;
+		@include mix-size(100vw, 150vh);
+		overflow: hidden;
 		flex-direction: column;
 		.mask {
 			@include mix-size(100%, 100%);

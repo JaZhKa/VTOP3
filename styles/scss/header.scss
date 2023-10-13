@@ -18,10 +18,13 @@ header {
 	background: $main-navy-blue;
 	z-index: 50;
 	.logo {
-		width: 20rem;
+		@include mix-size(18rem, 2rem);
 		flex: 0 1 auto;
 		img {
 			@include mix-size(100%, 100%);
+			background-image: url('./../../image/logo_horizontal_clear_white.png');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
 		}
 	}
 }
@@ -35,5 +38,17 @@ header {
 @include media(max, md) {
 	header {
 		padding: 0.5rem 1rem;
+	}
+}
+
+@include media(max, xs) {
+	header {
+		border: 2px solid $main-blue;
+		.logo{
+			@include mix-size(6rem, 2rem);
+			img{
+				background-image: url('./../../image/logo_horizontal_clear_white_small.png');
+			}
+		}
 	}
 }

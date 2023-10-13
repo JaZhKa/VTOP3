@@ -44,3 +44,24 @@ footer {
 		}
 	}
 }
+
+@include media(max, xs) {
+	footer {
+		.footer-wrapper {
+			.social {
+				p {
+					text-align: left;
+				}
+				.social-links{
+					button{
+						@include mix-size(1.5rem, 1.5rem);
+						background-size: 100% 100%;
+						&:hover, &:focus{
+							background-size: 100% 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}

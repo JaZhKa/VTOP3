@@ -46,3 +46,15 @@ footer {
 		}
 	}
 }
+
+@include media(max, xs) {
+	footer {
+		border-radius: 2rem 2rem 0rem 0rem;
+		margin: 0rem;
+		.footer-wrapper {
+			margin: 1.25rem;
+			gap: 1.25rem;
+			align-items: flex-start;
+		}
+	}
+}

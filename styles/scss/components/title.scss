@@ -87,8 +87,28 @@
 @include media(max, md) {
 	.banner {
 		.title {
-			h1, h4 {
+			h1,
+			h4 {
 				text-align: center;
+			}
+		}
+	}
+}
+
+@include media(max, xs) {
+	.banner {
+		.title {
+			h1 {
+				font-size: 2.875rem;
+			}
+			h4 {
+				font-size: 1.25rem;
+			}
+			.title-btn {
+				padding: 0.8rem 3.5rem;
+				p {
+					font-size: 1.125rem;
+				}
 			}
 		}
 	}

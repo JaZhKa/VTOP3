@@ -21,3 +21,30 @@ footer {
 		}
 	}
 }
+
+@include media(max, md) {
+	footer {
+		.footer-wrapper {
+			.pages {
+				align-self: flex-start;
+				margin: 2rem;
+				nav {
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					gap: 0.125rem;
+				}
+			}
+		}
+	}
+}
+
+@include media(max, xs) {
+	footer{
+		.footer-wrapper {
+			.pages{
+				margin: 0;
+			}
+		}
+	}
+}

@@ -57,7 +57,7 @@ header .btns .lang p::before {
   display: inline-block;
   background-size: contain;
   background: no-repeat;
-  background-image: url("./../../../image/btns/header/Icon - Planet.svg");
+  background-image: url("./../../../image/btns/header/Icon_Planet.svg");
 }
 header .btns .signUp {
   background: #478bf9;
@@ -78,7 +78,7 @@ header .btns .signUp {
     width: 2rem;
     height: 100%;
     background-size: cover;
-    background-image: url("./../../../image/btns/header/Icon - Planet.svg");
+    background-image: url("./../../../image/btns/header/Icon_Planet.svg");
   }
   header .btns .burger {
     display: block;
@@ -139,12 +139,16 @@ header {
   z-index: 50;
 }
 header .logo {
-  width: 20rem;
+  width: 18rem;
+  height: 2rem;
   flex: 0 1 auto;
 }
 header .logo img {
   width: 100%;
   height: 100%;
+  background-image: url("./../../image/logo_horizontal_clear_white.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 @media only screen and (max-width: 960px) {
@@ -155,5 +159,17 @@ header .logo img {
 @media only screen and (max-width: 768px) {
   header {
     padding: 0.5rem 1rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  header {
+    border: 2px solid #478bf9;
+  }
+  header .logo {
+    width: 6rem;
+    height: 2rem;
+  }
+  header .logo img {
+    background-image: url("./../../image/logo_horizontal_clear_white_small.png");
   }
 }/*# sourceMappingURL=header.css.map */

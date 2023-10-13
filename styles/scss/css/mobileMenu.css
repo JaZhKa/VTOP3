@@ -83,4 +83,25 @@
     line-height: 1.25rem;
     margin-bottom: 7rem;
   }
+}
+@media only screen and (max-width: 320px) {
+  .mobile.active .mobile-menu {
+    gap: 0.3rem;
+    width: 70%;
+  }
+  .mobile.active .mobile-menu .mobile-header-btn {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    padding: 0.8rem 2rem;
+  }
+  .mobile.active .mobile-btns {
+    gap: 0.3rem;
+  }
+  .mobile.active .mobile-btns .mobile-header-btn {
+    padding: 0.8rem;
+  }
+  .mobile.active .mobile-btns .mobile-header-btn.signUp {
+    padding: 0.8rem;
+    margin-bottom: 10rem;
+  }
 }/*# sourceMappingURL=mobileMenu.css.map */

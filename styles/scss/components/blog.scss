@@ -118,3 +118,32 @@
 		}
 	}
 }
+
+@include media(max, xs) {
+	.banner {
+		.blog{
+			width: 95%;
+			margin: 1rem;
+			h3{
+				@include text-style($main-clean-white, 2rem, 600, 2.5rem);
+			}
+			.blog-area {
+				border-radius: 4rem;
+				height: 28rem;
+				.blog{
+					gap: 0.5rem;
+					margin: 1rem;
+					.card {
+						padding: 1rem 2rem;
+						border-radius: 3rem;
+						.text-area {
+							.blog-text {
+								@include text-style($main-clean-white, 1rem, 400, 1.25rem);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

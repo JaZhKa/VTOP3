@@ -41,3 +41,15 @@
 		}
 	}
 }
+
+@include media(max, xs) {
+	.banner {
+		.bannerBG {
+			height: 15rem;
+			.line {
+				width: 3rem;
+				gap: 0.5rem;
+			}
+		}
+	}
+}

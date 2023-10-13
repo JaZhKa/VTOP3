@@ -52,3 +52,27 @@
 		}
 	}
 }
+
+@include media(max, xs) {
+	.mobile.active {
+		.mobile-menu {
+			gap: 0.3rem;
+			width: 70%;
+			.mobile-header-btn {
+				font-size: 1.125rem;
+				line-height: 1.5rem;
+				padding: 0.8rem 2rem;
+			}
+		}
+		.mobile-btns {
+			gap: 0.3rem;
+			.mobile-header-btn {
+				padding: 0.8rem;
+				&.signUp {
+					padding: 0.8rem;
+					margin-bottom: 10rem;
+				}
+			}
+		}
+	}
+}

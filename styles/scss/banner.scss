@@ -38,3 +38,20 @@
 		}
 	}
 }
+
+@include media(max, md) {
+	.banner{
+		@include mix-size(100vw, 180vh);
+		.mask{
+			bottom: 0%;
+		}
+	}
+}
+
+@include media(max, xs) {
+	.banner{
+		@include mix-size(100vw, 130vh);
+		justify-content: stretch;
+		margin-top: 5rem;
+	}
+}

@@ -115,4 +115,36 @@
   .banner .blog {
     width: 80%;
   }
+}
+@media only screen and (max-width: 320px) {
+  .banner .blog {
+    width: 95%;
+    margin: 1rem;
+  }
+  .banner .blog h3 {
+    color: #fff;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.5rem;
+  }
+  .banner .blog .blog-area {
+    border-radius: 4rem;
+    height: 28rem;
+  }
+  .banner .blog .blog-area .blog {
+    gap: 0.5rem;
+    margin: 1rem;
+  }
+  .banner .blog .blog-area .blog .card {
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+  }
+  .banner .blog .blog-area .blog .card .text-area .blog-text {
+    color: #fff;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+  }
 }/*# sourceMappingURL=blog.css.map */

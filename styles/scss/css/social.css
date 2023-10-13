@@ -34,4 +34,17 @@ footer .footer-wrapper .social .social-links button:hover {
   footer .footer-wrapper .social p {
     text-align: center;
   }
+}
+@media only screen and (max-width: 320px) {
+  footer .footer-wrapper .social p {
+    text-align: left;
+  }
+  footer .footer-wrapper .social .social-links button {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: 100% 100%;
+  }
+  footer .footer-wrapper .social .social-links button:hover, footer .footer-wrapper .social .social-links button:focus {
+    background-size: 100% 100%;
+  }
 }/*# sourceMappingURL=social.css.map */

@@ -24,4 +24,26 @@
   z-index: 60;
   bottom: -39.4rem;
   right: -10rem;
+}
+
+@media only screen and (max-width: 960px) {
+  .dotLight-left {
+    height: 100%;
+    top: -20%;
+    left: 40%;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .dotLight-left {
+    height: 40%;
+    top: 10%;
+    left: 50%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .dotLight-left {
+    fill: linear-gradient(180deg, #478bf9 0%, rgba(71, 139, 249, 0.4) 100%);
+    opacity: 0.55;
+    filter: blur(39.7346191406px);
+  }
 }/*# sourceMappingURL=dotLights.css.map */

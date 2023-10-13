@@ -16,6 +16,23 @@ footer .footer-wrapper .pages nav a:hover {
   text-decoration-line: underline;
 }
 
+@media only screen and (max-width: 768px) {
+  footer .footer-wrapper .pages {
+    align-self: flex-start;
+    margin: 2rem;
+  }
+  footer .footer-wrapper .pages nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.125rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  footer .footer-wrapper .pages {
+    margin: 0;
+  }
+}
 footer .footer-wrapper .social {
   display: flex;
   flex-direction: column;
@@ -48,6 +65,24 @@ footer .footer-wrapper .social .social-links button:hover {
   background: url("./../../image/btns/BG/BGHover.svg");
 }
 
+@media only screen and (max-width: 960px) {
+  footer .footer-wrapper .social p {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 320px) {
+  footer .footer-wrapper .social p {
+    text-align: left;
+  }
+  footer .footer-wrapper .social .social-links button {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: 100% 100%;
+  }
+  footer .footer-wrapper .social .social-links button:hover, footer .footer-wrapper .social .social-links button:focus {
+    background-size: 100% 100%;
+  }
+}
 footer {
   display: flex;
   width: 98vw;
@@ -81,5 +116,16 @@ footer .footer-wrapper {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  footer {
+    border-radius: 2rem 2rem 0rem 0rem;
+    margin: 0rem;
+  }
+  footer .footer-wrapper {
+    margin: 1.25rem;
+    gap: 1.25rem;
+    align-items: flex-start;
   }
 }/*# sourceMappingURL=footer.css.map */

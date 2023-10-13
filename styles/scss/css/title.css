@@ -108,7 +108,22 @@
   }
 }
 @media only screen and (max-width: 768px) {
-  .banner .title h1, .banner .title h4 {
+  .banner .title h1,
+  .banner .title h4 {
     text-align: center;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .banner .title h1 {
+    font-size: 2.875rem;
+  }
+  .banner .title h4 {
+    font-size: 1.25rem;
+  }
+  .banner .title .title-btn {
+    padding: 0.8rem 3.5rem;
+  }
+  .banner .title .title-btn p {
+    font-size: 1.125rem;
   }
 }/*# sourceMappingURL=title.css.map */

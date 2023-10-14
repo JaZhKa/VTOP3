@@ -263,7 +263,7 @@ header .logo {
   height: 2rem;
   flex: 0 1 auto;
 }
-header .logo img {
+header .logo .logo_pic {
   width: 100%;
   height: 100%;
   background-image: url("./../../image/logo_horizontal_clear_white.png");
@@ -289,7 +289,7 @@ header .logo img {
     width: 6rem;
     height: 2rem;
   }
-  header .logo img {
+  header .logo .logo_pic {
     background-image: url("./../../image/logo_horizontal_clear_white_small.png");
   }
 }
@@ -500,28 +500,31 @@ header .logo img {
   border-radius: 0.625rem;
   background: #478bf9;
 }
-.banner .blog .blog-area .blog {
+.banner .blog .blog-area .posts {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   width: 90%;
   gap: 1rem;
   margin: 1.5rem;
 }
-.banner .blog .blog-area .blog .card {
+.banner .blog .blog-area .posts .card {
   padding: 1rem 4rem;
   border-radius: 12.25rem;
   background: #1e1231;
   list-style: none;
   cursor: pointer;
 }
-.banner .blog .blog-area .blog .card:hover {
+.banner .blog .blog-area .posts .card:hover {
   background: #478bf9;
   transition: 0.3s;
 }
-.banner .blog .blog-area .blog .card .text-area {
+.banner .blog .blog-area .posts .card .text-area {
   display: flex;
   flex-direction: column;
   gap: 0.875rem;
 }
-.banner .blog .blog-area .blog .card .text-area .blog-text {
+.banner .blog .blog-area .posts .card .text-area .blog-text {
   color: #fff;
   font-size: 1.5rem;
   font-style: normal;
@@ -529,7 +532,7 @@ header .logo img {
   line-height: 1.75rem;
   align-self: stretch;
 }
-.banner .blog .blog-area .blog .card .text-area .date {
+.banner .blog .blog-area .posts .card .text-area .date {
   color: rgba(255, 255, 255, 0.6);
   font-size: 0.875rem;
   font-style: normal;
@@ -550,7 +553,7 @@ header .logo img {
     font-weight: 600;
     line-height: 2.5rem;
   }
-  .banner .blog .blog-area .blog .card .text-area .blog-text {
+  .banner .blog .blog-area .posts .card .text-area .blog-text {
     color: #fff;
     font-size: 1.1rem;
     font-style: normal;
@@ -569,7 +572,7 @@ header .logo img {
     font-weight: 600;
     line-height: 2.5rem;
   }
-  .banner .blog .blog-area .blog .card .text-area .blog-text {
+  .banner .blog .blog-area .posts .card .text-area .blog-text {
     color: #fff;
     font-size: 1.5rem;
     font-style: normal;
@@ -579,12 +582,24 @@ header .logo img {
 }
 @media only screen and (max-width: 768px) {
   .banner .blog {
-    width: 80%;
+    width: 95%;
+  }
+  .banner .blog .blog-area {
+    border-radius: 4.25rem;
+  }
+  .banner .blog .blog-area .posts .card {
+    padding: 1rem 3rem;
+  }
+  .banner .blog .blog-area .posts .card .text-area .blog-text {
+    color: #fff;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
   }
 }
 @media only screen and (max-width: 320px) {
   .banner .blog {
-    width: 95%;
     margin: 1rem;
   }
   .banner .blog h3 {
@@ -598,20 +613,13 @@ header .logo img {
     border-radius: 4rem;
     height: 28rem;
   }
-  .banner .blog .blog-area .blog {
+  .banner .blog .blog-area .posts {
     gap: 0.5rem;
     margin: 1rem;
   }
-  .banner .blog .blog-area .blog .card {
+  .banner .blog .blog-area .posts .card {
     padding: 1rem 2rem;
     border-radius: 3rem;
-  }
-  .banner .blog .blog-area .blog .card .text-area .blog-text {
-    color: #fff;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.25rem;
   }
 }
 .banner {
@@ -650,7 +658,7 @@ header .logo img {
     height: 180vh;
   }
   .banner .mask {
-    bottom: 0%;
+    bottom: -10%;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -839,6 +847,7 @@ footer .footer-wrapper {
     fill: linear-gradient(180deg, #478bf9 0%, rgba(71, 139, 249, 0.4) 100%);
     opacity: 0.55;
     filter: blur(39.7346191406px);
+    height: 30%;
   }
 }
 * {

@@ -143,7 +143,7 @@ header .logo {
   height: 2rem;
   flex: 0 1 auto;
 }
-header .logo img {
+header .logo .logo_pic {
   width: 100%;
   height: 100%;
   background-image: url("./../../image/logo_horizontal_clear_white.png");
@@ -169,7 +169,7 @@ header .logo img {
     width: 6rem;
     height: 2rem;
   }
-  header .logo img {
+  header .logo .logo_pic {
     background-image: url("./../../image/logo_horizontal_clear_white_small.png");
   }
 }/*# sourceMappingURL=header.css.map */

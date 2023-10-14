@@ -43,7 +43,7 @@
 	.banner{
 		@include mix-size(100vw, 180vh);
 		.mask{
-			bottom: 0%;
+			bottom: -10%;
 		}
 	}
 }

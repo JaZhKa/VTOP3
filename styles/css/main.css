@@ -1,3 +1,110 @@
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile {
+    display: none;
+  }
+  .mobile.active {
+    position: absolute;
+    z-index: 60;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    position: absolute;
+    background: #110a1d;
+    top: 7rem;
+  }
+  .mobile.active .mobile-menu {
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 81%;
+  }
+  .mobile.active .mobile-menu .mobile-header-btn {
+    gap: 0.5rem;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border-radius: 2rem;
+    border: 2px solid #478bf9;
+    background: #110a1d;
+    text-decoration-line: none;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+  }
+  .mobile.active .mobile-btns {
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 90%;
+  }
+  .mobile.active .mobile-btns .mobile-header-btn {
+    gap: 0.5rem;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border-radius: 2rem;
+    border: 2px solid #478bf9;
+    background: #1e1231;
+    text-decoration-line: none;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+  }
+  .mobile.active .mobile-btns .mobile-header-btn.signUp {
+    gap: 0.5rem;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    background: #478bf9;
+    text-decoration-line: none;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+    margin-bottom: 7rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .mobile.active .mobile-menu {
+    gap: 0.3rem;
+    width: 70%;
+  }
+  .mobile.active .mobile-menu .mobile-header-btn {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    padding: 0.8rem 2rem;
+  }
+  .mobile.active .mobile-btns {
+    gap: 0.3rem;
+  }
+  .mobile.active .mobile-btns .mobile-header-btn {
+    padding: 0.8rem;
+  }
+  .mobile.active .mobile-btns .mobile-header-btn.signUp {
+    padding: 0.8rem;
+    margin-bottom: 10rem;
+  }
+}
 body {
   display: flex;
   flex-direction: column;

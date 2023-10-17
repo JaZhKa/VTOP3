@@ -57,7 +57,7 @@ header .btns .lang p::before {
   display: inline-block;
   background-size: contain;
   background: no-repeat;
-  background-image: url("./../../../image/btns/header/Icon_Planet.svg");
+  background-image: url("./../../image/btns/header/Icon_Planet.svg");
 }
 header .btns .signUp {
   background: #478bf9;
@@ -78,7 +78,7 @@ header .btns .signUp {
     width: 2rem;
     height: 100%;
     background-size: cover;
-    background-image: url("./../../../image/btns/header/Icon_Planet.svg");
+    background-image: url("./../../image/btns/header/Icon_Planet.svg");
   }
   header .btns .burger {
     display: block;

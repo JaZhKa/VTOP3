@@ -177,7 +177,7 @@ header .btns .lang p::before {
   display: inline-block;
   background-size: contain;
   background: no-repeat;
-  background-image: url("./../../../image/btns/header/Icon_Planet.svg");
+  background-image: url("./../../image/btns/header/Icon_Planet.svg");
 }
 header .btns .signUp {
   background: #478bf9;
@@ -198,7 +198,7 @@ header .btns .signUp {
     width: 2rem;
     height: 100%;
     background-size: cover;
-    background-image: url("./../../../image/btns/header/Icon_Planet.svg");
+    background-image: url("./../../image/btns/header/Icon_Planet.svg");
   }
   header .btns .burger {
     display: block;
@@ -464,6 +464,18 @@ header .logo .logo_pic {
     gap: 0.5rem;
   }
 }
+.line-1 {
+  background-color: antiquewhite;
+}
+
+.line-2 {
+  background-color: antiquewhite;
+}
+
+.line-3 {
+  background-color: antiquewhite;
+}
+
 .banner .blog {
   display: flex;
   width: 33rem;
@@ -479,7 +491,7 @@ header .logo .logo_pic {
   font-weight: 600;
   line-height: 2.5rem;
 }
-.banner .blog .blog-area {
+.banner .blog .blog-area-wrapper {
   height: 37rem;
   align-self: stretch;
   border-radius: 6.25rem;
@@ -487,20 +499,26 @@ header .logo .logo_pic {
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(10px);
   overflow: hidden;
-  overflow-y: scroll;
+  padding-right: 1rem;
 }
-.banner .blog .blog-area::-webkit-scrollbar {
+.banner .blog .blog-area-wrapper .blog-area {
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 100%;
+}
+.banner .blog .blog-area-wrapper .blog-area::-webkit-scrollbar {
   width: 0.5rem;
 }
-.banner .blog .blog-area::-webkit-scrollbar-track {
+.banner .blog .blog-area-wrapper .blog-area::-webkit-scrollbar-track {
+  margin: 5rem 0;
   border-radius: 0.625rem;
   background: rgba(255, 255, 255, 0.12);
 }
-.banner .blog .blog-area::-webkit-scrollbar-thumb {
+.banner .blog .blog-area-wrapper .blog-area::-webkit-scrollbar-thumb {
   border-radius: 0.625rem;
   background: #478bf9;
 }
-.banner .blog .blog-area .posts {
+.banner .blog .blog-area-wrapper .blog-area .posts {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -508,23 +526,23 @@ header .logo .logo_pic {
   gap: 1rem;
   margin: 1.5rem;
 }
-.banner .blog .blog-area .posts .card {
+.banner .blog .blog-area-wrapper .blog-area .posts .card {
   padding: 1rem 4rem;
   border-radius: 12.25rem;
   background: #1e1231;
   list-style: none;
   cursor: pointer;
 }
-.banner .blog .blog-area .posts .card:hover {
+.banner .blog .blog-area-wrapper .blog-area .posts .card:hover {
   background: #478bf9;
   transition: 0.3s;
 }
-.banner .blog .blog-area .posts .card .text-area {
+.banner .blog .blog-area-wrapper .blog-area .posts .card .text-area {
   display: flex;
   flex-direction: column;
   gap: 0.875rem;
 }
-.banner .blog .blog-area .posts .card .text-area .blog-text {
+.banner .blog .blog-area-wrapper .blog-area .posts .card .text-area .blog-text {
   color: #fff;
   font-size: 1.5rem;
   font-style: normal;
@@ -532,7 +550,7 @@ header .logo .logo_pic {
   line-height: 1.75rem;
   align-self: stretch;
 }
-.banner .blog .blog-area .posts .card .text-area .date {
+.banner .blog .blog-area-wrapper .blog-area .posts .card .text-area .date {
   color: rgba(255, 255, 255, 0.6);
   font-size: 0.875rem;
   font-style: normal;
@@ -553,7 +571,7 @@ header .logo .logo_pic {
     font-weight: 600;
     line-height: 2.5rem;
   }
-  .banner .blog .blog-area .posts .card .text-area .blog-text {
+  .banner .blog .blog-area-wrapper .blog-area .posts .card .text-area .blog-text {
     color: #fff;
     font-size: 1.1rem;
     font-style: normal;
@@ -572,7 +590,7 @@ header .logo .logo_pic {
     font-weight: 600;
     line-height: 2.5rem;
   }
-  .banner .blog .blog-area .posts .card .text-area .blog-text {
+  .banner .blog .blog-area-wrapper .blog-area .posts .card .text-area .blog-text {
     color: #fff;
     font-size: 1.5rem;
     font-style: normal;
@@ -584,13 +602,13 @@ header .logo .logo_pic {
   .banner .blog {
     width: 95%;
   }
-  .banner .blog .blog-area {
+  .banner .blog .blog-area-wrapper {
     border-radius: 4.25rem;
   }
-  .banner .blog .blog-area .posts .card {
+  .banner .blog .blog-area-wrapper .blog-area .posts .card {
     padding: 1rem 3rem;
   }
-  .banner .blog .blog-area .posts .card .text-area .blog-text {
+  .banner .blog .blog-area-wrapper .blog-area .posts .card .text-area .blog-text {
     color: #fff;
     font-size: 1rem;
     font-style: normal;
@@ -609,15 +627,20 @@ header .logo .logo_pic {
     font-weight: 600;
     line-height: 2.5rem;
   }
-  .banner .blog .blog-area {
+  .banner .blog .blog-area-wrapper {
     border-radius: 4rem;
     height: 28rem;
+    padding-right: 0.4rem;
   }
-  .banner .blog .blog-area .posts {
+  .banner .blog .blog-area-wrapper .blog-area::-webkit-scrollbar-track {
+    margin: 3rem 0;
+  }
+  .banner .blog .blog-area-wrapper .blog-area .posts {
     gap: 0.5rem;
-    margin: 1rem;
+    margin: 0.5rem;
+    width: 95%;
   }
-  .banner .blog .blog-area .posts .card {
+  .banner .blog .blog-area-wrapper .blog-area .posts .card {
     padding: 1rem 2rem;
     border-radius: 3rem;
   }
